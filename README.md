@@ -6,6 +6,12 @@ Simple CLI to create a new repo on github
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/createp.svg)](https://npmjs.org/package/createp)
 
+# Install
+
+```sh
+npm i -g createp
+```
+
 # Usage
 - Create a new project:
 ```sh
