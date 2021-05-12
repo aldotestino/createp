@@ -7,7 +7,7 @@ import { createRepo } from './utils/repo';
 import cli from 'cli-ux';
 import { getToken, saveToken } from './utils/token';
 
-class Createp extends Command {
+class Rcreate extends Command {
   static description = 'Simple CLI to create a new repo on github';
 
   static flags = {
@@ -21,7 +21,7 @@ class Createp extends Command {
   static args = [{ name: 'projectName' }];
 
   async run(): Promise<void> {
-    const { args, flags } = this.parse(Createp);
+    const { args, flags } = this.parse(Rcreate);
     
     let GITHUB_TOKEN: string;
 
@@ -76,4 +76,4 @@ class Createp extends Command {
   }
 }
 
-export = Createp;
+export = Rcreate;

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import * as path from 'path';
 
-const configPath = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME']!, '.createp-config.json');
+const configPath = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME']!, '.rcreate-config.json');
 
 interface Config {
   token: string

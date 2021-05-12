@@ -1,12 +1,12 @@
 {
-  "name": "createp",
+  "name": "rcreate",
   "description": "Simple CLI to create a new repo on github",
   "version": "0.0.1",
   "author": "aldotestino",
   "bin": {
-    "createp": "./bin/run"
+    "rcreate": "./bin/run"
   },
-  "bugs": "https://github.com/aldotestino/createp/issues",
+  "bugs": "https://github.com/aldotestino/rcreate/issues",
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
     "@types/node": "^10.17.59",
@@ -23,7 +23,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/aldotestino/createp",
+  "homepage": "https://github.com/aldotestino/rcreate",
   "keywords": [
     "oclif",
     "github",
@@ -33,9 +33,9 @@
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
-    "bin": "createp"
+    "bin": "rcreate"
   },
-  "repository": "aldotestino/createp",
+  "repository": "aldotestino/rcreate",
   "scripts": {
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",

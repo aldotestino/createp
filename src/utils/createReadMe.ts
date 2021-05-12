@@ -7,6 +7,6 @@ interface CreateReadMeArgs {
 }
 
 export function createReadMe({ projectPath, projectName, author }: CreateReadMeArgs): void {
-  const file = `# ${projectName} by ${author}\n\nProject scaffold by [create](https://github.com/aldotestino/createp)`;
+  const file = `# ${projectName} by ${author}\n\nProject scaffold by [create](https://github.com/aldotestino/rcreate)`;
   writeFileSync(`${projectPath}/README.md`, file);
 }
