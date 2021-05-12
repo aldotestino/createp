@@ -1,0 +1,54 @@
+{
+  "name": "createp",
+  "description": "Simple CLI to create a new repo on github",
+  "version": "0.0.1",
+  "author": "aldotestino",
+  "bin": {
+    "createp": "./bin/run"
+  },
+  "bugs": "https://github.com/aldotestino/createp/issues",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@types/node": "^10.17.59",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.9"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/aldotestino/createp",
+  "keywords": [
+    "oclif",
+    "github",
+    "create",
+    "project"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "createp"
+  },
+  "repository": "aldotestino/createp",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2",
+    "axios": "^0.21.1",
+    "cli-ux": "^5.5.1",
+    "tslib": "^1.14.1"
+  }
+}
